@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<body>   
+<div id="recipe-adder" style="display:none">
+
+        
+        <form id="recipe-info">
+            <h1>Title</h1>
+            <input type="text" name="title">
+            <h1>Instructions</h1>
+            <input type="text" name="instructions">
+        </form>
+            <h1>Indegrients</h1>
+            <label><input type="checkbox" class="ingredient">Meat</label>
+            <label><input type="checkbox" class="ingredient">Pasta</label>
+            <label><input type="checkbox" class="ingredient">Cheese</label>
+            <label><input type="checkbox" class="ingredient">Fruits</label>
+            <label><input type="checkbox" class="ingredient">Vegetables</label>
+            <label><input type="checkbox" class="ingredient">Eggs</label>
+            <label><input type="checkbox" class="ingredient">Rice</label>
+    
+        <button form="recipe-info">Send recipe</button>
+        <button id="close">Close</button>
+    </div>
+
+    <form id="search">
+        <input name="searchPhrase">
+        <label><input type="checkbox" class="filter">Meat</label>
+            <label><input type="checkbox" class="filter">Pasta</label>
+            <label><input type="checkbox" class="filter">Cheese</label>
+            <label><input type="checkbox" class="filter">Fruits</label>
+            <label><input type="checkbox" class="filter">Vegetables</label>
+            <label><input type="checkbox" class="filter">Eggs</label>
+            <label><input type="checkbox" class="filter">Rice</label>
+    <button>Search</button>
+    </form>
+    <button id="add-recipe">Add recipe</button>
+
+    <div id="recipesList"></div>
+<script src="adder.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
